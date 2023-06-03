@@ -1,0 +1,22 @@
+{
+  "name": "server-components",
+  "version": "1.0.0",
+  "description": "Copied from https://github.com/reactwg/server-components/discussions/5 inorder to understand the server components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/index.ts --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/escape-html": "^1.0.2",
+    "@types/node": "^20.2.5",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "escape-html": "^1.0.3",
+    "tsx": "^3.12.7"
+  }
+}
