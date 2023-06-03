@@ -1,4 +1,4 @@
-import { createServer } from "http";
+import { createServer, ServerResponse } from "http";
 import { readFile } from "fs/promises";
 import escapeHtml from "escape-html";
 
@@ -28,7 +28,7 @@ createServer(async (req, res) => {
   );
 }).listen(8080);
 
-function sendHTML(res, html) {
+function sendHTML(res: ServerResponse, html: string) {
   res.writeHead(200, { "Content-Type": "text/html" });
   res.end(html);
 }
